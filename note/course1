@@ -1,0 +1,25 @@
+To create the virtual environment
+-- python -m venv venv
+-- venv\Scripts\activate
+
+To install django
+-- pip install django
+
+To create the django project
+-- django-admin startproject projectname .
+-- python manage.py startapp appname
+
+in the settings.py
+add app name to the list of installed app
+installed_app = [
+    ............,
+    'app name',
+]
+
+To set up static files
+STATIC_URL ='static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIRS, 'static')]
+
+To set up media url
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIRS, 'media')
